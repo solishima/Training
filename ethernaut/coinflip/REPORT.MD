@@ -2,17 +2,29 @@
 
 # Security Review Report (CoinFlip)
 
+## Table of Contents
+1. [Project Overview](#project-overview)
+   - [Problem Statement](#problem-statement)
+2. [Vulnerable Lines of Code](#vulnerable-lines-of-code)
+3. [Vulnerability Details](#vulnerability-details)
+   - [Root Cause Analysis](#root-cause-analysis)
+   - [Steps to Reproduce](#steps-to-reproduce)
+4. [Impact](#impact)
+   - [Potential Exploits](#potential-exploits)
+5. [Proof of Concept](#proof-of-concept)
+6. [Remediation](#remediation)
+7. [References](#references)
+
+
 ## Project Overview
 This is a coin flipping game where you need to build up your winning streak by guessing the outcome of a coin flip. To complete this level you'll need to use your psychic abilities to guess the correct outcome 10 times in a row.
 
 ### Problem Statement
 The smart contract is designed to illustrate a common vulnerability in the CoinFlip game, where the predictability of randomness can be exploited. This report aims to guide developers in identifying and mitigating such vulnerabilities in Ethereum smart contracts to enhance security.
 
-## Lines of Code
+## Vulnerable Lines of Code
 
 - [Weak Randomness Source](./src/CoinFlip.sol#L14-21)
-
----
 
 ## Vulnerability Details
 

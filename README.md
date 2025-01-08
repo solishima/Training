@@ -8,6 +8,9 @@ This repository documents my learning journey in Smart Contract Security, starti
 These reports provide insights into smart contract vulnerabilities and solutions, serving as both a learning record and a resource for others exploring smart contract security.
 
 
+
+### Disclaimer
+This repository is intended for use by developers and security researchers as an educational resource.
 ---
 
 Feel free to explore and provide feedback!

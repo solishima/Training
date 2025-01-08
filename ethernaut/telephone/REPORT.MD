@@ -2,6 +2,20 @@
 
 # Security Review Report (Telephone)
 
+## Table of Contents
+1. [Project Overview](#project-overview)
+    - [Problem Statement](#problem-statement)
+    - [Intended Use](#intended-use)
+2. [Security Issues](#security-issues)
+    - [Issue 1: Ownership Takeover Vulnerability](#issue-1-ownership-takeover-vulnerability)
+3. [Proof of Concept](#proof-of-concept)
+4. [Remediation](#remediation)
+    - [Implement Ownership Checks](#implement-ownership-checks)
+5. [Conclusion](#conclusion)
+6. [Glossary](#glossary)
+7. [References](#references)
+
+
 ## Project Overview
 The `Telephone` contract sets the deployer as the owner and allows ownership transfer via `changeOwner`, but it has a vulnerability that lets anyone change the owner if called from a different address, enabling potential exploitation.
 
@@ -18,9 +32,12 @@ The contract is intended for use by developers and security researchers as an ed
 - **Exploitation**: An attacker can deploy a malicious contract that calls `changeOwner`, bypassing the intended ownership checks and taking control of the contract.
 - **Consequences**: This vulnerability can lead to unauthorized ownership transfers, resulting in potential financial loss and loss of control over the contract for the legitimate owner.
 
-## Recommendations
+## Proof of Concept
+> [Reference Implementation](./test/Telephone.t.sol#L8).
 
-### Recommendation 1: Implement Ownership Checks
+## Remediation
+
+### Implement Ownership Checks
 - **Action**: Modify the `changeOwner` function to restrict ownership changes to only the current owner by checking `msg.sender` against the `owner` variable. This will prevent unauthorized ownership transfers.
 
 ```diff
