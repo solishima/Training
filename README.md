@@ -2,6 +2,7 @@
 This repository documents my learning journey in Smart Contract Security, starting with [Ethernaut](https://ethernaut.openzeppelin.com/), a series of security-focused challenges. For each challenge, I have created detailed audit reports, showcasing identified vulnerabilities and potential mitigations.
 
 
+## Audit Reports
 1. [CoinFlip Audit Report](./ethernaut/coinflip/REPORT.MD)  
 2. [Telephone Audit Report](./ethernaut/telephone/REPORT.MD)  
 
