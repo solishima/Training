@@ -9,8 +9,8 @@ This repository documents my learning journey in Smart Contract Security, starti
 | Coin Flip          | [Report](./ethernaut/coinflip/REPORT.MD)    |
 | Telephone          | [Report](./ethernaut/telephone/REPORT.MD)    |
 | Token              | [Report](./ethernaut/token/REPORT.MD)    |
-| Delegation         | ❌        |
-| Force              | ❌        |
+| Delegation         | [Report](./ethernaut/delegate/REPORT.MD)    |
+| Force              | [Report](./ethernaut/force/REPORT.MD)    |
 | Vault              | ❌        |
 | King               | ❌        |
 | Re-entrancy        | ❌        |
