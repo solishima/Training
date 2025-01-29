@@ -11,7 +11,7 @@ This repository documents my learning journey in Smart Contract Security, starti
 | Token              | [Report](./ethernaut/token/REPORT.MD)    |
 | Delegation         | [Report](./ethernaut/delegate/REPORT.MD)    |
 | Force              | [Report](./ethernaut/force/REPORT.MD)    |
-| Vault              | ❌        |
+| Vault              | [Report](./ethernaut/vault/REPORT.MD)    |
 | King               | ❌        |
 | Re-entrancy        | ❌        |
 | Elevator           | ❌        |
