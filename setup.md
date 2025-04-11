@@ -1,6 +1,6 @@
 # setup foundry project
-```bash 
-$ forge init # optional PROJECT_NAME or DIRECTORY_NAME
+```bash
+$ forge init # optional PROJECT_NAME or DIRECTORY_NAME --no-git
 ```
 
 ## Create .env and fill in

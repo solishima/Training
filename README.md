@@ -13,7 +13,7 @@ This repository documents my learning journey in Smart Contract Security, starti
 | Force              | [Report](./ethernaut/force/REPORT.MD)    |
 | Vault              | [Report](./ethernaut/vault/REPORT.MD)    |
 | King               | [Report](./ethernaut/king/REPORT.MD)     |
-| Re-entrancy        | ❌        |
+| Re-entrancy        | [Report](./ethernaut/reentrancy/REPORT.MD)|
 | Elevator           | ❌        |
 | Privacy            | ❌        |   
 | Gatekeeper One     | ❌        |
